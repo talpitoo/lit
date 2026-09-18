@@ -1,0 +1,67 @@
+name: Bug report
+description: A component or story does not behave or look as it should
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Every field is optional. Fill in what you know; a Storybook link or a screenshot is worth more than a long description.
+  - type: input
+    id: component
+    attributes:
+      label: Component
+      placeholder: obc-button, obc-compass, obc-alert-menu-item …
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happens
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the story …
+        2. Set … to …
+        3. See …
+  - type: input
+    id: storybook
+    attributes:
+      label: Storybook story
+      description: A link into https://openbridge-next-storybook.web.app (or the stable https://openbridge-storybook.web.app), with the controls that show the problem.
+      placeholder: https://openbridge-next-storybook.web.app/?path=/story/…
+  - type: input
+    id: figma
+    attributes:
+      label: Figma reference
+      description: The node in the OpenBridge 6.1 main file (`kQMFf24Y1ry43HJWOStqd8`), as a link or the bare node id, when the report is about a difference from the design.
+      placeholder: https://www.figma.com/design/kQMFf24Y1ry43HJWOStqd8/OpenBridge-6.1?node-id=…
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The `@oicl/openbridge-webcomponents` version, and the last version that worked if this is a regression.
+      placeholder: 2.0.0-next.155 (worked in next.131)
+  - type: dropdown
+    id: framework
+    attributes:
+      label: Framework
+      options: [Plain HTML / CDN bundle, React, Vue, Angular, Svelte]
+  - type: dropdown
+    id: theme
+    attributes:
+      label: Theme
+      description: The `data-obc-theme` the problem shows in.
+      options: [day, dusk, night, bright, all]
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and OS
+      placeholder: Chrome 140 / macOS 15
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots, console output, anything else
+      description: Paste images or a recording here. Related issues, workarounds tried.

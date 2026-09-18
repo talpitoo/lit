@@ -1,13 +1,11 @@
-blank_issues_enabled: false
+blank_issues_enabled: true
 contact_links:
-  - name: 📖 Documentation
-    url: https://github.com/lit/lit.dev/issues/
-    about: For issues relating to documentation on lit.dev, refer to the lit.dev repo.
-
-  - name: ❓ Questions, Help, and Advice
-    url: https://github.com/lit/lit/discussions
-    about: For general support, please refer to the Lit discussion board.
-
-  - name: 💬 Chat
-    url: https://lit.dev/discord/
-    about: Alternatively, you can join the Lit Discord to talk to the Lit community and team.
+  - name: Storybook (next)
+    url: https://openbridge-next-storybook.web.app
+    about: Every component with its stories and controls; link the story that shows your case.
+  - name: Demo app
+    url: https://openbridge-next-demo.web.app/
+    about: The components composed into screens.
+  - name: Contributing guide
+    url: https://github.com/Ocean-Industries-Concept-Lab/openbridge-webcomponents/blob/develop/CONTRIBUTING.md
+    about: How to report, propose and submit changes.

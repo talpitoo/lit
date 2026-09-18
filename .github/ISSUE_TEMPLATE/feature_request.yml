@@ -1,0 +1,47 @@
+name: Feature request
+description: A new component, variant, property or behaviour
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: Every field is optional. A Figma node and one sentence on the use case are the two things that move a request fastest.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      placeholder: One or two sentences on what you want.
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Use case
+      description: What you are building and why the current components do not cover it.
+  - type: input
+    id: figma
+    attributes:
+      label: Figma reference
+      description: The node in the OpenBridge 6.1 main file (`kQMFf24Y1ry43HJWOStqd8`), or "no design yet". A missing design is settled with the design team before the code, so say so here.
+      placeholder: https://www.figma.com/design/kQMFf24Y1ry43HJWOStqd8/OpenBridge-6.1?node-id=…
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Desired behaviour, property names, events, a rough API shape. Sketches are fine.
+  - type: input
+    id: storybook
+    attributes:
+      label: Closest existing story
+      placeholder: https://openbridge-next-storybook.web.app/?path=/story/…
+  - type: input
+    id: affected
+    attributes:
+      label: Affected components
+      placeholder: obc-top-bar, obc-button, the React wrapper …
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What you tried with the existing components, and why it falls short.
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots, mockups, related issues
